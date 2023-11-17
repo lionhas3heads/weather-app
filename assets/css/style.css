@@ -1,0 +1,41 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-weather {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.weather-forecast-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.geolocate-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#savedCitiesBtn {
+    margin: 0.5rem;
+}
+
+#saveCityBtn {
+    grid-column: 3;
+}
