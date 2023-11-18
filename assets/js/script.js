@@ -13,7 +13,7 @@ const savedCitiesCardEl = document.querySelector('.saved-cities-card');
 function getWeather(lat, lon) {
 
 fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`
+    `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`
 )
     .then(function (res) {
     return res.json();
@@ -81,7 +81,7 @@ const userInput = geolocationWrapperEl.children[1].value;
 console.log(userInput);
 
     fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${userInput}&limit=1&appid=${apiKey}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${userInput}&limit=1&appid=${apiKey}`
     )
     .then(function (res) {
         return res.json();
